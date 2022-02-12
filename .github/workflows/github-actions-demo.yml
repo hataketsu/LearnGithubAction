@@ -16,3 +16,4 @@ jobs:
           tag: ${{ github.sha }}
       - run: echo "ajojo"
       - run: docker --version
+      - run: docker images
