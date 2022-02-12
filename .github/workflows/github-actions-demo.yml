@@ -1,12 +1,12 @@
 name: GitHub Actions Demo
-on: [push]
+on: [ push ]
 jobs:
   pipiline:
     name: Skaffold Docker build
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout sources
-          uses: actions/checkout@v2
+        uses: actions/checkout@v2
       - name: Build Docker images
         uses: hiberbee/github-action-skaffold@1.12.0
         with:
