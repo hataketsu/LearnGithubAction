@@ -14,3 +14,5 @@ jobs:
           repository: ghcr.io/hiberbee/docker
           image: nodejs
           tag: ${{ github.sha }}
+      - run: echo "ajojo"
+      - run: docker --version
