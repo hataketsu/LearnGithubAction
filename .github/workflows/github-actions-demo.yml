@@ -19,6 +19,6 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Install Skaffold
-        run: gcloud components install skaffold
+        run: sudo apt-get install google-cloud-sdk-skaffold
       - name: Deploy system
         run: skaffold run
